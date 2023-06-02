@@ -142,6 +142,14 @@ img {
     clear: both;
 }
 
+/* Variables (used for post-entry) */
+:root {
+  --gap: 24px;
+  --radius: 8px;
+  --entry: rgb(255, 255, 255);
+  --border: rgb(170, 170, 170);
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -156,7 +164,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid var(--border);
 
   @include mobile {
     text-align: center;
@@ -210,6 +218,22 @@ img {
   }
 }
 
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
@@ -225,10 +249,11 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $blue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    padding: 1em;
 
     @include mobile {
       margin: 0 10px;
@@ -269,6 +294,38 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+
+// post-entry and associated variables, html from the PaperMod Jekyll Theme
+
+.post-entry:hover .entry-header h1 {
+  color: $blue;
+}
+
+.post-entry:hover header.entry-header {
+  color: $blue;
+}
+
+.post-entry:active {
+  transform: scale(.96)
+}
+
+.post-entry {
+  position: relative;
+  margin-bottom: var(--gap);
+  padding: var(--gap);
+  background: var(--entry);
+  border-radius: var(--radius);
+  transition: transform .1s;
+  border: 1px solid var(--border);
+}
+
+.entry-header h1 {
+    color: $blue;
+}
+
+.entry-description {
+    color: black;
 }
 
 .wrapper-footer {

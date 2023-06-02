@@ -4,15 +4,17 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <article class="post-entry">
+      <header class="entry-header">
+        <h1>{{ post.title }}</h1>
+      </header>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+      <div class="entry-description">
+        {{ post.description }}
+        <!-- {{ post.excerpt }} -->
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
+  </a>
   {% endfor %}
 </div>

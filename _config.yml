@@ -6,10 +6,11 @@
 name: Your Name
 
 # Short bio or description (displayed in the header)
-description: Summer 2020 DREU Project
+description: Summer 2023 DREU Project
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar_alt_text: describe_your_avatar_here # don't redundantly say it's an image. See more tips here: https://www.a11yproject.com/posts/alt-text/ 
 
 #
 # Flags below are optional
@@ -18,7 +19,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: yourmail@mail.com
+  email: your.mail@mail.com
   facebook:
   flickr:
   rss: # just type anything here for a working RSS icon

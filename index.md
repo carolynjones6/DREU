@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Summer 2020 DREU Project Site
+title: Summer 2023 DREU Project Site
 ---
 
 * TOC
@@ -19,7 +19,3 @@ Mentor info goes here.
 Project description goes here.
 
 [My Final Report](files/finalreport.pdf)
-
-## My Blog
-
-[My Blog](blog.html)

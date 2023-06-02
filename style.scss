@@ -147,7 +147,7 @@ img {
   --gap: 24px;
   --radius: 8px;
   --entry: rgb(255, 255, 255);
-  --border: rgb(238, 238, 238);
+  --border: rgb(170, 170, 170);
 }
 
 /*********************/
@@ -164,7 +164,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid var(--border);
 
   @include mobile {
     text-align: center;
@@ -297,13 +297,6 @@ nav {
 }
 
 // post-entry and associated variables, html from the PaperMod Jekyll Theme
-.entry-link { // fill the tile
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0
-}
 
 .post-entry:hover .entry-header h1 {
   color: $blue;
@@ -325,11 +318,15 @@ nav {
   border-radius: var(--radius);
   transition: transform .1s;
   border: 1px solid var(--border);
+}
 
-  a.entry-link:hover {
+.entry-header h1 {
     color: $blue;
-  }
-} 
+}
+
+.entry-description {
+    color: black;
+}
 
 .wrapper-footer {
   margin-top: 50px;

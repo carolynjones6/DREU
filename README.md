@@ -17,9 +17,9 @@ A copy of this repository will be made in your own github account.
 
 In "myname/dreuprojecttemplate", click on "Settings" near the top right hand of the window. Change the repository name from "dreuprojecttemplate" to to "myname.github.io". ("myname" must match your GitHub user name exactly.)
 
-Scroll down til you see "GitHub pages" and choose "Master" instead of "None".
+Scroll down until you see "GitHub pages" and choose "master" instead of "None".
 
-If you already have a GitHub site, then you can make this a project site rather than your personal site.
+If you already have a GitHub site, then you can make this a project site rather than your personal site. If you do, you may need to rename "master" to "gh-pages" to trigger deployment.
 
 ### Step 4) Customize and view your site
 

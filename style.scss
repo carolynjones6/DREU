@@ -142,6 +142,14 @@ img {
     clear: both;
 }
 
+/* Variables (used for post-entry) */
+:root {
+  --gap: 24px;
+  --radius: 8px;
+  --entry: rgb(255, 255, 255);
+  --border: rgb(238, 238, 238);
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -286,6 +294,33 @@ nav {
     font-size: 15px;
   }
 }
+
+// post-entry and associated variables, html from the PaperMod Jekyll Theme
+.post-entry:hover .entry-header h1 {
+  color: $blue;
+}
+
+.post-entry:hover header.entry-header {
+  color: $blue;
+}
+
+.post-entry:active {
+  transform: scale(.96)
+}
+
+.post-entry {
+  position: relative;
+  margin-bottom: var(--gap);
+  padding: var(--gap);
+  background: var(--entry);
+  border-radius: var(--radius);
+  transition: transform .1s;
+  border: 1px solid var(--border);
+
+  a.entry-link:hover {
+    color: $blue;
+  }
+} 
 
 .wrapper-footer {
   margin-top: 50px;

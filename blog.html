@@ -4,16 +4,17 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h1>{{ post.title }}</h1>
+      </header>
 
       <div class="entry">
         {{ post.description }}
         <!-- {{ post.excerpt }} -->
       </div>
 
-      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
+      <a class="entry-link" aria-label="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}"></a>
     </article>
   {% endfor %}
 </div>

@@ -4,6 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+  <a href="{{ site.baseurl }}{{ post.url }}">
     <article class="post-entry">
       <header class="entry-header">
         <h1>{{ post.title }}</h1>
@@ -13,8 +14,7 @@ layout: default
         {{ post.description }}
         <!-- {{ post.excerpt }} -->
       </div>
-
-      <a class="entry-link" aria-label="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}"></a>
     </article>
+  </a>
   {% endfor %}
 </div>

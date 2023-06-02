@@ -296,6 +296,14 @@ nav {
 }
 
 // post-entry and associated variables, html from the PaperMod Jekyll Theme
+.entry-link { // fill the tile
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0
+}
+
 .post-entry:hover .entry-header h1 {
   color: $blue;
 }

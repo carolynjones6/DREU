@@ -16,7 +16,7 @@ I am computer science major beginning my senior year at Southwestern University 
 
 ## About My Project
 
-I am assisting Dr. Paquette with his research on persistence in education. We will be collecting data from a Minecraft server where student participants will receive an introduction to computing. The data collected for analysis will focus on each student's level of engagement as they create programs to guide a barrel bot through a series of obstacle courses. We hope to identify correlations between the data collected and points of challenge for the students to better understand how students persist or do not persist when they face educational challenges.
+I am assisting Dr. Paquette with his research on persistence in education. We will be collecting data from a Minecraft server where student participants will receive an introduction to computing. The data collected for analysis will focus on each student's level of engagement as they [create programs to guide the barrel bot through a series of obstacle courses](https://youtu.be/7PEeWMxOHKM?si=4hsWnwkE4zKcu_JX). We hope to identify correlations between the data collected and points of challenge for the students to better understand how students persist or do not persist when they face educational challenges.
 
 [My Final Report](files/finalreport.pdf)
 

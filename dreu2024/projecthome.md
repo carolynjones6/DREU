@@ -22,4 +22,4 @@ Project description goes here.
 
 ## My Blog
 
-[My Blog](blog.html)
+[My Blog](/blog.html)
